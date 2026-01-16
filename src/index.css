@@ -1,11 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+section {
+  animation: fadeIn 0.8s ease-in;
 }
 
-body {
-  background-color: #0f172a;
-  color: #e5e7eb;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
