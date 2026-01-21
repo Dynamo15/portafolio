@@ -1,20 +1,23 @@
 import "./Navbar.css";
+import navigation from "../../data/navigation.json";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <h2>Ricardo</h2>
-      <ul>
-        <li>HOME</li>
-        <li>ABOUTE ME</li>
-        <li>TECHNOLOGIES</li>
-        <li>PROJECTS</li>
-        <li>SKILL</li>
-        <li>CURRICULUM</li>
-        <li>CONTACT</li>
-        
+    <nav className='navbar'>
+      <div className="Navbar__logo">Ricardo Sánchez</div>
+
+
+      <ul className="navbar__links">
+        {navigation.map((item) => (
+          <li key={item.id}>
+            <a href={`#${item.id}`}>{item.label}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
-}
+};
+
+export default Navbar;
+
 
