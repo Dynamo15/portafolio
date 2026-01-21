@@ -1,14 +1,28 @@
+import projects from "../data/projects.json";
+
 function Projects() {
   return (
-    <section style={{ padding: "2rem" }}>
+    <section id="projects">
       <h2>Proyectos</h2>
-      <ul>
-        <li>Portafolio personal (React + Vite)</li>
-        <li>Sistema de gestión de agua (Laravel + React)</li>
-        <li>Videojuego UE5 (Tesis)</li>
-      </ul>
+
+      {projects.map(project => (
+        <article key={project.id}>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+
+          <ul>
+            {project.tech.map(tech => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+
+          <a href={project.url} target="_blank">
+            Ver proyecto
+          </a>
+        </article>
+      ))}
     </section>
-  )
+  );
 }
 
 export default Projects

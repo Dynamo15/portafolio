@@ -1,13 +1,15 @@
+import profile from "../data/profile.json";
+
 function About() {
   return (
-    <section style={{ padding: "2rem" }}>
+    <section id="about">
       <h2>Sobre mí</h2>
-      <p>
-        Desarrollador enfocado en aplicaciones web modernas y
-        proyectos de ingeniería de software.
-      </p>
+      <h3>{profile.name}</h3>
+      <p>{profile.role}</p>
+      <p>{profile.description}</p>
+      <span>{profile.location}</span>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

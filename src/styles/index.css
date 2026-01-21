@@ -1,0 +1,64 @@
+
+:root {
+  --bg: #000000e5;
+  --text: #e5e7eb;
+  --card: #020617;
+  --primary: #38bdf8;
+  --Muted: #94a3b8
+  --Accent: #38bdf8
+
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  /*transition: background-color 0.3s ease, color 0.3s ease;*/
+  font-family: "Inter", system-ui, sans-serif;
+}
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .theme-btn {
+    width: 100%;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.3rem;
+  }
+}
