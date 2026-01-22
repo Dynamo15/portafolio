@@ -1,6 +1,6 @@
 [
-    {"id": "hero", "label": "Inicio"},
-    {"id": "about", "label": "Sobre mi"},
-    {"id": "projects", "label": "Proyectos"},
-    {"id": "skills", "label": "Skills"}
+  { "id": "hero" },
+  { "id": "about" },
+  { "id": "projects" },
+  { "id": "skills" }
 ]

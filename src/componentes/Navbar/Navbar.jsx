@@ -1,7 +1,18 @@
 import "./Navbar.css";
 import navigation from "../../data/navigation.json";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
+
+
 
 const Navbar = () => {
+  const context = useContext(LanguageContext);
+  
+  if (!context) return null;
+
+  const { t, language, setLanguage } = context;
+
+
   return (
     <nav className='navbar'>
       <div className="Navbar__logo">Ricardo Sánchez</div>
@@ -9,12 +20,19 @@ const Navbar = () => {
 
       <ul className="navbar__links">
         {navigation.map((item) => (
-          <li key={item.id}>
-            <a href={`#${item.id}`}>{item.label}</a>
-          </li>
-        ))}
-      </ul>
+  <li key={item.id}>
+    <a href={`#${item.id}`}>
+      {t.nav[item.id]}
+    </a>
+  </li>
+))}
+
+    </ul >
+      <button onClick={() => setLanguage(language === "es" ? "en" : "es")}>
+        {language.toUpperCase()}
+      </button>
     </nav>
+    
   );
 };
 

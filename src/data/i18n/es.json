@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "hero": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+
+  "hero": {
+    "title": "Hola, soy Ricardo",
+    "subtitle": "Desarrollador de software"
+  }
+}
