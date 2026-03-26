@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* resto del contenido */}
+      <Hero />
+      <h1 className= "text-3x1 text-blue-500">App funcionando</h1>
     </>
+  
   );
 }
 

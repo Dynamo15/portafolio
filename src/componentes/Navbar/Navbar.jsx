@@ -22,7 +22,7 @@ const Navbar = () => {
         {navigation.map((item) => (
   <li key={item.id}>
     <a href={`#${item.id}`}>
-      {t.nav[item.id]}
+      {t(`nav.${item.id}`)}
     </a>
   </li>
 ))}

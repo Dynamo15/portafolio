@@ -6,9 +6,9 @@ const Hero = () => {
 
   return(
     <section id = "hero">
-      <h1>{t.hero.title}</h1>
-      <p>{t.herosubtitle}</p>
-      <button>{t.hero.cta}</button>
+      <h1>{t("hero.title")}</h1>
+      <p>{t("herosubtitle")}</p>
+      <button>{t("hero.cta")}</button>
     </section>
   );
 };
