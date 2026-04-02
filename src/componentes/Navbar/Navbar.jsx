@@ -17,6 +17,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className="Navbar__logo">Ricardo Sánchez</div>
 
+    
 
       <ul className="navbar__links">
         {navigation.map((item) => (
@@ -26,6 +27,8 @@ const Navbar = () => {
     </a>
   </li>
 ))}
+
+
 
     </ul >
       <button onClick={() => setLanguage(language === "es" ? "en" : "es")}>
