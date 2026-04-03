@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        secondary: "#f5548",
+        darkBg: "#131424" 
+      },
+      backgroundImage: {
+        "gradient-cover":
+          "linear-gradient(90.21deg, rgba(70, 54, 124, 0.5)-5.91%, rgba(74, 47, 189, 0.5)111.58%)"
+      },
+    },
   },
   plugins: [],
 }

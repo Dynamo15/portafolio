@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --bg: #000000e5;
   --text: #e5e7eb;

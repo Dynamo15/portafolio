@@ -4,14 +4,20 @@ import About from "./secciones/About";
 import Projects from "./secciones/Projects";
 import Skills from "./secciones/Skills";
 import Hero from "./secciones/Hero";
-
+import CoverParticles from "./componentes/CoverParticles";
 
 
 function App() {
   return (
+
+    <>
+    <CoverParticles />
     <Layout>
-      <h1>APP FUNCIONA</h1>
+      <Hero />
+      <Projects />
     </Layout>
+    </>
+    
   );
 }
 
